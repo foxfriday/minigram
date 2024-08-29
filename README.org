@@ -1,0 +1,13 @@
+* ~Minigram~: A minimal grammar checker
+
+This package uses a local instance of [[https://languagetool.org/][LanguageTool]] to check errors. It aims to be as
+simple as possible. It has no dependencies other than Java and an instance of ~LanguageTool~
+which can be downloaded from their [[https://internal1.languagetool.org/snapshots/][server]]. The package treats grammatical check as a
+compilation of language. Checks are not done in real time, but once the text is finished.
+I find that sequence far less distracting.
+
+** Similar Packages
+
+[[https://github.com/valentjn/ltex-ls][Ltex-ls]] provides a language server compatible with ~Eglot~, and capable of parsing various
+mark up languages. But I never managed to make it work with a configuration file, either
+in the command line or as a server.
